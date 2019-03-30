@@ -1,0 +1,19 @@
+import java.util.*;
+public class Neon{
+public static void main(String args[]){
+Scanner sc=new Scanner(System.in);
+int a,a1,s=0,r=0;
+System.out.printn("Enter a number");
+a=sc.nextInt();
+a1=a*a;
+while(a1!=0){
+r=a1%10;
+s+=r;
+a1/=10;
+}
+if(s==a1)
+System.out.println("Neon number");
+else
+System.out.println("Not a Neon number");
+}
+}
